@@ -11,7 +11,7 @@ which could accurately predict if a song is popular. We used
 a data set from songs on Spotify with 13 Spotify-defined features for each of 19,000 songs and their relative popularity
 on Spotify. We also tested for feature importance in predicting popularity to get a sense of what kinds of acoustic features of music make it popular. We then fit
 several models with different hyper parameters and ranked
-their performance. Below is an example of a couple rows of the data used.
+their performance. Below is an example of a sample of rows and columns of the data used.
 
 ```{r, echo=FALSE,message = FALSE, warning = FALSE, results='hold'}
 library(tidyverse)

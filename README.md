@@ -11,7 +11,8 @@ for each of 19,000 songs and their relative popularity on Spotify. We
 also tested for feature importance in predicting popularity to get a
 sense of what kinds of acoustic features of music make it popular. We
 then fit several models with different hyper parameters and ranked their
-performance. Below is an example of a couple rows of the data used.
+performance. Below is an example of a sample of rows and columns of the
+data used.
 
     ##                     song_name song_popularity song_duration_ms acousticness
     ## 1: Boulevard of Broken Dreams              73           262333     0.005520
