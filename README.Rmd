@@ -43,7 +43,7 @@ comp %>% ggplot(aes(x = fct_reorder(model,score), y = score)) +
 
 
 
-For more information on the specifics of our methods and discussion see
+For more information on the specifics of our methods and a discussion of our model diagnostics, see
 [Final_Report.pdf](Final_Report.pdf) above
 
 
