@@ -1,0 +1,53 @@
+---
+title: Using Various Machine Learning Models to Predict Popularity of Songs on Spotify
+output: github_document
+---
+
+With the increasing dominance of streaming platforms
+for music, understanding the music industry has become
+more about understanding the listening behavior on these
+platforms. Here, we sought to fit machine learning models
+which could accurately predict if a song is popular. We used
+a data set from songs on Spotify with 13 Spotify-defined features for each of 19,000 songs and their relative popularity
+on Spotify. We also tested for feature importance in predicting popularity to get a sense of what kinds of acoustic features of music make it popular. We then fit
+several models with different hyper parameters and ranked
+their performance. Below is an example of a couple rows of the data used.
+
+```{r, echo=FALSE,message = FALSE, warning = FALSE, results='hold'}
+library(tidyverse)
+library(data.table)
+
+songs <- fread("Van/data/song_data.csv")
+song_info <- fread("Van/data/song_info.csv")
+
+songs[1:5,1:4]
+```
+
+
+Below we have displayed a chart of the performances for each of the models used. The percentages represent the accuracy of the trained model on the test set. We split the full data set into 80% training and 20% testing.
+
+```{r, echo=FALSE,warning=FALSE, message= FALSE}
+# Comparison Chart
+model <- c("kNN","kNN(GS)","Decision Tree","Decision Tree(GS)","Bagging","Random Forest")
+scores <- c(81.63,87.11,85.99,86.66,92.50,93.98)
+
+comp <- data.frame(model = model, score = scores)
+
+comp %>% ggplot(aes(x = fct_reorder(model,score), y = score)) + 
+  geom_bar(stat = 'identity',fill = '#4444dd') +
+  coord_flip() +
+  labs(title = "Model Accuracy Comparisons (GS = 'Grid Search')",
+       y = "% Accuracy",
+       x = 'Model')
+```
+
+
+
+For more information on the specifics of our methods and discussion see
+[Final_Report.pdf](Final_Report.pdf) above
+
+
+
+
+
+
