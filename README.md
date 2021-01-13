@@ -27,7 +27,5 @@ testing.
 
 ![](README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 
-For more information on the specifics of our methods and discussion see
-“Final\_Report.pdf” above
-
-[Final\_Report.pdf](Final_Report.pdf)
+For more information on the specifics of our methods and a discussion of
+our model diagnostics, see [Final\_Report.pdf](Final_Report.pdf) above
