@@ -44,9 +44,9 @@ comp %>% ggplot(aes(x = fct_reorder(model,score), y = score)) +
 
 
 For more information on the specifics of our methods and a discussion of our model diagnostics, see
-[Final_Report.pdf](Final_Report.pdf) above
+[Final_Report.pdf](Final_Report.pdf) above.
 
-
+A video presentation of our project can be viewed [here](Presentation_Materials/Video Presentation of ML models of Song Popularity.mp4).
 
 
 

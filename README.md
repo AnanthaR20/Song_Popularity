@@ -29,4 +29,7 @@ testing.
 ![](README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 
 For more information on the specifics of our methods and a discussion of
-our model diagnostics, see [Final\_Report.pdf](Final_Report.pdf) above
+our model diagnostics, see [Final\_Report.pdf](Final_Report.pdf) above.
+
+A video presentation of our project can be viewed
+[here](Presentation_Materials/Video%20Presentation%20of%20ML%20models%20of%20Song%20Popularity.mp4).
